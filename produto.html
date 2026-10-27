@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Modelo — LPDB</title>
+  <meta name="theme-color" content="#161316">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/brand/favicon-32.png">
+  <link rel="apple-touch-icon" href="img/brand/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wdth,wght@0,100..125,400..900;1,100..125,400..900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-page="produto">
+
+<header class="site-header solid">
+  <a class="brand" href="index.html#inicio" aria-label="LPDB — início">
+    <img src="img/brand/logo-lpdb-sm.webp" width="627" height="481" alt="LPDB">
+  </a>
+  <nav class="nav" id="menu" aria-label="Principal">
+    <a href="index.html#inicio">Início</a>
+    <a href="index.html#catalogo">Catálogo</a>
+    <a href="index.html#sobre">Sobre</a>
+    <a href="index.html#novidades">Novidades</a>
+    <a href="index.html#localizacao">Localização</a>
+    <a href="index.html#catalogo" class="nav-cta">Ver catálogo</a>
+  </nav>
+  <button class="burger" id="burger" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<main class="product-page">
+  <a class="back" href="index.html#catalogo">← Voltar ao catálogo</a>
+
+  <p class="notice" id="produto-aviso" hidden></p>
+
+  <article class="product" id="produto">
+    <div class="gallery">
+      <div class="gallery-main" id="galeria-principal"></div>
+      <div class="gallery-thumbs" id="galeria-thumbs"></div>
+    </div>
+    <div class="product-info">
+      <p class="eyebrow" id="p-categoria">Categoria</p>
+      <h1 id="p-nome">Nome do modelo</h1>
+      <p class="code" id="p-codigo">Cód. —</p>
+      <p class="price" id="p-preco">Consulte o preço</p>
+      <p class="desc" id="p-descricao"></p>
+      <div class="actions">
+        <a class="btn btn-solid btn-wa" id="p-wa" href="#" data-wa="produto">Tenho interesse <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12h15M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn-line" href="index.html#catalogo">Ver outros modelos</a>
+      </div>
+      <p class="hint" id="p-wa-hint" hidden>O número de WhatsApp da loja ainda será informado.</p>
+    </div>
+  </article>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-top">
+    <img src="img/brand/logo-lpdb-sm.webp" width="627" height="481" alt="LPDB" loading="lazy">
+    <nav aria-label="Rodapé">
+      <a href="index.html#catalogo">Catálogo</a>
+      <a href="index.html#sobre">Sobre</a>
+      <a href="index.html#novidades">Novidades</a>
+      <a href="index.html#localizacao">Localização</a>
+      <a data-link="instagram" href="https://www.instagram.com/deyselupas?exln=Yzhqa2JvcXFtM2Vj" target="_blank" rel="noopener">Instagram</a>
+      <a data-link="grupo" href="https://chat.whatsapp.com/J1fOBAEf64T6e6kY1jvm9u" target="_blank" rel="noopener">Grupo de novidades</a>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="ano">2026</span> LPDB. Todos os direitos reservados.</span>
+    <a href="#">Voltar ao topo ↑</a>
+  </div>
+</footer>
+
+<script src="data/config.js"></script>
+<script src="data/produtos.js"></script>
+<script src="js/app.js" defer></script>
+</body>
+</html>
